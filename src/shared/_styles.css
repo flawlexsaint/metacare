@@ -325,6 +325,10 @@
   .lg_hide {
     display: none !important;
   }
+
+  .md_lg_hide {
+    display: none !important;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

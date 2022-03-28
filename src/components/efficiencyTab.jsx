@@ -61,7 +61,7 @@ const EfficiencyTab = ({ selectedTab }) => {
             <div className="">
               <SearchComponent props={searchProps} />
             </div>
-            <div className="sm_margin lg_hide">
+            <div className="sm_margin md_lg_hide">
               <DropdownComponent
                 style="me-3 dropdown_height full_width"
                 content="Filter Options"
