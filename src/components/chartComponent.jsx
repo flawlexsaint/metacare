@@ -41,7 +41,7 @@ const ChartComponent = ({ props }) => {
       <div className="mt-4">
         <div className="border">
           <div className="row">
-            <div className="col-md-8 col-lg-9 border-end p-4">
+            <div className="col-lg-9 border-end p-4">
               <div className="d-flex block align-items-center justify-content-between">
                 <div className="d-flex align-items-center">
                   <h6 className="chart_header">{props.chartHeader}</h6>
@@ -75,7 +75,7 @@ const ChartComponent = ({ props }) => {
                 width="100%"
               />
             </div>
-            <div className="col-md-4 col-lg-3">
+            <div className="col-lg-3">
               <div className="p-3 pe-lg-4">
                 <div className="response_time_section p-3 mt-5">
                   <p className="response_time">{props.cardTitle1}</p>

@@ -1,5 +1,6 @@
 .wrapper {
-  width: 100%;
+  width: 100% !important;
+  margin: auto !important;
   overflow-x: hidden;
 }
 
@@ -60,6 +61,16 @@
   font-size: 16px;
   line-height: 24px;
   color: #696d8c;
+}
+
+.tabs_title:hover,
+.tabs_title:active {
+  border: none;
+}
+
+.tabs_title.active {
+  border: none;
+  border-bottom: 3px solid #6837ef !important;
 }
 
 .border {
@@ -222,8 +233,38 @@
     width: 100%;
   }
 
-  .sidebar {
+  .screen_scroll {
+    height: calc(100vh - 109px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .search_component,
+  .global_search {
+    width: 150px;
+  }
+
+  .sm_margin {
+    margin-top: 1rem;
+  }
+
+  .block {
+    display: block !important;
+  }
+
+  .xs_hide {
     display: none;
+  }
+
+  .full_width {
+    width: 100% !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .content {
+    width: 100%;
   }
 
   .screen_scroll {
@@ -254,21 +295,45 @@
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .md_hide {
+    display: none !important;
+  }
+
+  .screen_scroll {
+    height: calc(100vh - 109px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .sm_margin {
+    margin-top: 1rem;
+  }
+
+  .block {
+    display: block !important;
+  }
+
+  .full_width {
+    width: 100% !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .lg_hide {
+    display: none !important;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .global_search {
     width: 441px;
+  }
+
+  .lg_hide {
+    display: none !important;
   }
 }
