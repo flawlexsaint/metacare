@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "antd/dist/antd.css";
+@import "bootstrap/dist/css/bootstrap.css";
+@import "./shared/_styles.css";
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
+@font-face {
+  font-family: Gelion;
+  src: url("./assets/fonts/Gelion-Regular.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Gelion Medium;
+  src: url("./assets/fonts/Gelion-Medium.ttf");
+}
+
+@font-face {
+  font-family: Gelion Semibold;
+  src: url("./assets/fonts/Gelion-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Gelion Bold;
+  src: url("./assets/fonts/Gelion-Bold.ttf");
+}
+
+* {
+  font-family: Gelion;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon,
+.apexcharts-reset-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon,
+.apexcharts-menu-icon,
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6e8192;
+  text-align: center;
+  display: none;
 }
