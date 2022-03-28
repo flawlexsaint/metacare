@@ -63,7 +63,7 @@ const EfficiencyTab = ({ selectedTab }) => {
             </div>
             <div className="sm_margin lg_hide">
               <DropdownComponent
-                style={"me-3 dropdown_height full_width"}
+                style="me-3 dropdown_height full_width"
                 content="Filter Options"
               />
             </div>

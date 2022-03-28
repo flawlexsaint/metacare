@@ -4,13 +4,13 @@ import { Calendar } from "primereact/calendar";
 
 const ChartComponent = ({ props }) => {
   const [date2, setDate2] = useState(null);
-  const [series, setSeries] = useState([
+  const [series] = useState([
     {
       name: "Desktops",
       data: [10, 41, 35, 51, 49, 62, 69, 91],
     },
   ]);
-  const [options, setOptions] = useState({
+  const [options] = useState({
     chart: {
       height: 350,
       type: "line",
